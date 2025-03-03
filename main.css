@@ -7,7 +7,7 @@
 body {
     background-color: #c5d6f4;
     align-items: center;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lilita One", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
@@ -23,18 +23,19 @@ header{
     justify-content: center;
 }
 
-header, form {
-    max-width: 800px;
+header, form, .container-lista {
+    max-width: 900px;
     margin: 16px auto;
     width: 100%;
 }
 
-.container, .container-form, .lista-de-tarefas {
+.container, .container-form {
     margin-left: 16px;
     display: flex;
     align-items: center;
     list-style: none;
 }
+
 
 header div img{
     margin-left: 10px;
@@ -42,7 +43,7 @@ header div img{
 }
 
 form input, form button{
-    font-family: "Sigmar", serif;
+    font-family: "Lilita One", sans-serif;
     border: none;
     font-size: 16px;
 }
@@ -68,14 +69,36 @@ form button{
     font-weight: 100;
     padding: 11px;
     cursor: pointer;
-    background-color: #77acf2;
+    background-color: #4251f4;
     border-radius: 30px;
     margin-left: 5px;
     color: #fff;
 }
 
+.lista-de-tarefas {
+    list-style: none;
+    width: 100%;
+}
 
+.container-lista {
+    text-align: center;
+}
 
-#header-lista{
+.container-lista h2{
+    width: 100%;
     color: #4251f4;
+    font-size: 28px;
+    font-weight: 100;
+    border-bottom: 2px dashed #2674da83;
+    margin-bottom: 5px;
+}
+
+.lista-de-tarefas li{
+    margin-top: 2px;
+    color: #2674dabb;
+    border-bottom: 1px groove #2674da2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
