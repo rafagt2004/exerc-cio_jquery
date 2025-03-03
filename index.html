@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Lista de Tarefas</h1>
+            <img src="./images/icon.jpg" alt="Bloco de tarefas">
+        </div>
+    </header>
+    <form>
+        <div class="container-form">
+            <input type="text" required placeholder="Nome da Tarefa" id="input-tarefa">
+            <button type="submit" id="button-add-tarefa">Adicionar</button>
+        </div>
+    </form>
+
+    <ul class="lista-de-tarefas">
+        <div class="container-lista">
+            <li id="header-lista">
+                <span>Código</span>
+                <span>Tarefa</span>
+            </li>
+            <li>
+                <span>1</span>
+                <span>Teste</span>
+            </li>
+        </div>
+    </ul>
+    <script src="main.js"></script>
+</body>
+
+</html>

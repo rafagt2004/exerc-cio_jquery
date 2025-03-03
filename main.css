@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c5d6f4;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+header{
+    color:  #4251f4;
+    font-family: "Sigmar", serif;
+    margin-bottom: 20px;
+}
+
+header, form {
+    max-width: 800px;
+    margin: 16px auto;
+    width: 100%;
+}
+
+.container, .container-form, .lista-de-tarefas {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header div img{
+    margin-left: 10px;
+    height: 100px;
+}
+
+form input, form button{
+    font-family: "Sigmar", serif;
+    border: none;
+    font-size: 16px;
+}
+
+form input{
+    padding: 10px;
+    border-radius: 30px;
+    color: #77acf2;
+    outline: 1px outset #77acf2;
+    margin-right:5px;
+    width: 100%;
+}
+
+form input:focus{
+    outline: 1px inset #77acf2;
+}
+
+form input::placeholder{
+    color: #77acf2;
+}
+
+form button{
+    font-weight: 100;
+    padding: 11px;
+    cursor: pointer;
+    background-color: #77acf2;
+    border-radius: 30px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+
+
+#header-lista{
+    color: #4251f4;
+}
