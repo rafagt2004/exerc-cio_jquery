@@ -18,6 +18,9 @@ header{
     color:  #4251f4;
     font-family: "Sigmar", serif;
     margin-bottom: 20px;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
 }
 
 header, form {
