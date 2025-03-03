@@ -3,13 +3,20 @@ $(document).ready(function(){
         e.preventDefault();
 
         const tarefa = $('#input-tarefa').val();
-        console.log(tarefa)
         const adicionaTarefa = $('<li></li>');
-        $(`<img src="./images/check.svg" alt="check">
-            <span>${tarefa}</span>`).appendTo(adicionaTarefa);
+        const linkRemover = $('<a href="#"></a>');
+        const imgRemover = $('<img src="./images/check.svg" alt="check">');
+        
+        imgRemover.appendTo(linkRemover);
+        linkRemover.appendTo(adicionaTarefa);
+        
+        $(`<span>${tarefa}</span>`).appendTo(adicionaTarefa);
         $(adicionaTarefa).appendTo('ul');
 
-        $('#input-tarefa').val('')
-    })
-    
-})
+        $('#input-tarefa').val('');
+
+        linkRemover.click(function() {
+            $(this).closest('li').remove();
+        });
+    });
+});
