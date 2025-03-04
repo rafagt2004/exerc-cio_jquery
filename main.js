@@ -8,15 +8,15 @@ $(document).ready(function(){
         const imgRemover = $('<img src="./images/check.svg" alt="check">');
         
         imgRemover.appendTo(linkRemover);
+        $(`<span>${tarefa}</span>`).appendTo(linkRemover);
         linkRemover.appendTo(adicionaTarefa);
         
-        $(`<span>${tarefa}</span>`).appendTo(adicionaTarefa);
         $(adicionaTarefa).appendTo('ul');
 
         $('#input-tarefa').val('');
 
         linkRemover.click(function() {
-            $(this).closest('li').remove();
+            linkRemover.css('text-decoration','line-through')
         });
     });
 });

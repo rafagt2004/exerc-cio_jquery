@@ -93,7 +93,8 @@ form button{
     margin-bottom: 5px;
 }
 
-.lista-de-tarefas li{
+.lista-de-tarefas li a{
+    text-decoration: none;
     margin-top: 2px;
     color: #2674dabb;
     border-bottom: 1px groove #2674da2e;
